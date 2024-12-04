@@ -26,6 +26,8 @@
 - Add `CORROSION_TOOLS_RUST_TOOLCHAIN` cache variable which allows users to select a different
   rust toolchain for compiling build-tools used by corrosion (currently cbindgen and cxxbridge).
   This mainly allows using a newer toolchain for such build-tools then for the actual project.
+- Add support for namespacing library and binary crates into separate namespaces using `BIN_NAMESPACE`
+  and `LIB_NAMESPACE`. This allows disambiguating crates with binaries and libraries that share a name.
 
 [doc-cmake-rt-output-dir]: https://cmake.org/cmake/help/latest/prop_tgt/RUNTIME_OUTPUT_DIRECTORY.html
 [#459]: https://github.com/corrosion-rs/corrosion/pull/459
